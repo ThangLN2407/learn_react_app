@@ -21,6 +21,7 @@ const ExpenseItem = ({ item }) => {
                 handleHover={(e) => {
                   console.log(e);
                 }}
+                value="value"
               />
             </div>
             <div className="expense-item__description">
