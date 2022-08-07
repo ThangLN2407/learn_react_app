@@ -5,10 +5,20 @@ const ExpenseDate = (props) => {
   const day = props.date.toLocaleString("en-US", { day: "2-digit" });
   const year = props.date.getFullYear();
 
+  const _onHandleClick = () => {
+    // truyền data lên cho component cha
+    const data = {
+      name: "test",
+      number: 1
+    }
+
+    props.handleClick(data)
+  };
+
   return (
     <>
       <div>{`${day}-${month}-${year}`}</div>
-      <button onClick={props.handleClick}>click here</button>
+      <button onClick={_onHandleClick}>click here</button>
       <button onClick={props.handleHover}>hover here</button>
     </>
   );
