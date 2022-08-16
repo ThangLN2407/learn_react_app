@@ -1,0 +1,13 @@
+.expense-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 10px;
+}
+
+.card{
+  background-color: aqua;
+  border: 1px solid red;
+  border-radius: 10px;
+}
